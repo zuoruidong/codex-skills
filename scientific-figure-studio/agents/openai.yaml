@@ -1,0 +1,5 @@
+interface:
+  display_name: "Scientific Figure Studio"
+  short_description: "Create, audit, revise, and imitate scientific figures"
+  brand_color: "#3478A3"
+  default_prompt: "Use $scientific-figure-studio to create, audit, revise, or adapt this scientific figure."
