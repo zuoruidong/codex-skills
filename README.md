@@ -2,9 +2,18 @@
 
 Public collection of reusable Codex skill packages.
 
+## 关于这个项目
+
+这个公开库由 [@zuoruidong](https://github.com/zuoruidong) 维护。作者会持续把平时看到的高质量科研图、好用的绘图代码、审图经验和翻修技巧整理进
+`NB-figure-studio`，让它不只是一个静态模板，而是一套会不断学习和更新的科研绘图 skill。
+
+当前版本：**v1.0**。后续每次加入值得复用的新技巧，都会更新版本、验证技能并同步到这里。
+
 ## Included skills
 
 ### `NB-figure-studio`
+
+**Version:** 1.0
 
 A unified scientific-figure workflow for:
 
@@ -16,6 +25,10 @@ A unified scientific-figure workflow for:
 - revising figures from source code, editable artwork, or raster images;
 - imitating a reference figure's visual system without copying its evidence;
 - running a complete make → audit → revise → deliver loop.
+
+New reusable plotting techniques and review lessons are integrated into the
+relevant reference file, validated, versioned, and pushed to this public
+repository so the installed skill and GitHub copy stay in sync.
 
 ## Installation
 
