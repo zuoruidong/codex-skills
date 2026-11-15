@@ -7,6 +7,8 @@ description: >-
   翻修、仿图、论文配图、figure redesign, reference-style adaptation, or final-size
   export review. Do not use for dashboards, video, or purely statistical analysis
   that does not need a figure.
+metadata:
+  version: "1.0"
 ---
 
 # NB-figure-studio
@@ -121,6 +123,35 @@ Separate:
 
 Read [references/imitation-and-reuse.md](references/imitation-and-reuse.md) before
 any 仿图、reference-style redraw, template reuse, or image-to-image style transfer.
+
+## Maintain the skill
+
+This skill is a living personal toolkit. When the user supplies a plotting
+technique, strong reference, correction, or review lesson and asks to learn it:
+
+1. Extract the generalizable principle, when it applies, and when it would be
+   misleading. Separate a durable rule from a one-off aesthetic preference.
+2. Check it against existing guidance. Merge or replace only after resolving
+   conflicts; preserve stricter scientific-integrity and accessibility rules.
+3. Put it in the right home: design values in `references/design-system.md`,
+   review tests in `references/qa-rubric.md`, mode procedures in
+   `references/modes.md` or `references/imitation-and-reuse.md`, and tool routing
+   in `references/capability-map.md`.
+4. Validate the skill. For a substantial workflow change, test it on a realistic
+   figure request without creating misleading synthetic production data.
+5. Update `metadata.version`. The current contract starts at `1.0`. Use a minor
+   bump such as `1.1` for a new reusable technique or capability, a patch bump
+   such as `1.0.1` for a correction, and `2.0` only for an incompatible
+   restructuring.
+6. Sync the workspace package, installed Codex skill, and public repository:
+   <https://github.com/zuoruidong/codex-skills>. Commit, push, and verify that the
+   remote `nb-figure-studio/` tree contains the change.
+7. Report the new version, what was learned, and the GitHub commit. Never upload
+   private source data, credentials, personal paths, or protected reference assets.
+
+Do this proactively when the user explicitly asks to learn and save a technique.
+For ordinary figure production, update the skill only when the user asks to
+persist a reusable lesson.
 
 ## Delivery standard
 
