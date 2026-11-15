@@ -1,5 +1,5 @@
 ---
-name: scientific-figure-studio
+name: nb-figure-studio
 description: >-
   Unified scientific-figure workflow for creating, reading, auditing, revising,
   redesigning, and imitating data plots, multi-panel figures, vector schematics,
@@ -9,7 +9,7 @@ description: >-
   that does not need a figure.
 ---
 
-# Scientific Figure Studio
+# NB-figure-studio
 
 Turn a scientific message into an honest, legible, reproducible figure, then
 review it as both visual evidence and a deliverable. Keep creation, reading,
