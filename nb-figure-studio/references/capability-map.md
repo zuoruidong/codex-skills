@@ -17,7 +17,8 @@ trail.
 | Matplotlib/Seaborn/Plotly truthfulness, palette, missing data, export provenance | `scientific-visualization` | Design and validation standards |
 | Coherent publication style, review checklist, AI revision prompt | `publication-figure-style` | Style system and revision checklist |
 | Read paper figures panel by panel | `scientific-figure-reader` | Evidence labels, figure-family checks, interpretation |
-| Differential-expression volcano | `publication-volcano` | Validated table-to-volcano script |
+| Differential-expression volcano | Internal [reference-figure-recipes.md](reference-figure-recipes.md#volcano-plot) | Validate the DE table contract, thresholds, labels, and display cap |
+| Circular/L-axis/hull UMAP, multi-track evidence wheel | Internal [reference-figure-recipes.md](reference-figure-recipes.md#figure-family-router) | Choose the structural recipe before coding |
 | DE diagnostic plots | `de-visualization` | MA, volcano, PCA, distance heatmap, dispersion |
 | Enrichment plots | `enrichment-visualization` | GO/KEGG/GSEA redundancy and plot choice |
 | AI raster image generation/editing | `imagegen` | Illustrations, graphical abstracts, targeted raster edits |
@@ -63,17 +64,21 @@ For PDF papers, use its preparation helper when available, then visually inspect
 the rendered pages and ambiguous crops. OCR or extracted text is not a substitute
 for viewing marks, layout, color, overlap, and image evidence.
 
-### Publication Volcano
+### Internal Figure Recipes
 
-Use only when the table has:
+Read the matching section of
+[reference-figure-recipes.md](reference-figure-recipes.md) before implementing one
+of these chart families:
 
-- one row per feature;
-- a stable feature ID;
-- signed log2 fold-change;
-- adjusted P/FDR, unless the user explicitly requests raw P.
+- volcano plot;
+- circular UMAP;
+- L-axis UMAP;
+- irregular dashed-hull UMAP;
+- multi-track evidence wheel.
 
-Run the script with the actual contrast, thresholds, ID mapping, and display cap.
-Never tune thresholds to create a preferred count.
+Use the supplied/derived data contract for that exact family. Do not route a
+categorical evidence wheel to a genomic-coordinate renderer, or treat a sparse
+demo dataset as proof that a dense reference style cannot be reproduced.
 
 ## Fallbacks
 

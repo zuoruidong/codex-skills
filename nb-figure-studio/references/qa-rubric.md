@@ -119,6 +119,12 @@ Improves finish without changing interpretation:
 - The new figure reuses structure without importing source-specific scientific
   content or protected marks.
 - The data contract of the template matches the new data.
+- Sector, axis, track, and grouping semantics were identified before choosing the
+  plotting package.
+- Dense-cloud similarity was separated from marker-size tuning; the cell/point
+  count and coordinate distribution remain traceable.
+- Package names, install URLs, and function arguments were checked against current
+  installed/source APIs.
 - Provenance and rights are recorded.
 - Similarity does not create a false claim of exact journal compliance.
 

@@ -8,7 +8,7 @@ description: >-
   export review. Do not use for dashboards, video, or purely statistical analysis
   that does not need a figure.
 metadata:
-  version: "1.0"
+  version: "1.1"
 ---
 
 # NB-figure-studio
@@ -76,8 +76,13 @@ when the missing choice changes the scientific output or the drawing backend.
   workflow rather than a raster generator.
 - **AI bitmap, illustration, or graphical abstract:** use `imagegen`; treat the
   result as a draft visual, not quantitative evidence.
-- **Domain plot:** use a validated domain script when the data contract matches,
-  such as `publication-volcano` for DE volcano plots.
+- **Domain plot:** use a validated domain script when the data contract matches.
+  For the chart families learned in this toolkit, use the internal recipe index
+  below rather than assuming a separately installed domain skill exists.
+- **Reference-derived R figure:** read
+  [references/reference-figure-recipes.md](references/reference-figure-recipes.md)
+  before recreating volcano plots, circular UMAPs, L-axis UMAPs, irregular hull
+  UMAPs, multi-track evidence wheels, or code shown in video/reference screenshots.
 
 Read [references/capability-map.md](references/capability-map.md) for the current
 skill/script routing table and fallback behavior.
@@ -123,6 +128,10 @@ Separate:
 
 Read [references/imitation-and-reuse.md](references/imitation-and-reuse.md) before
 any 仿图、reference-style redraw, template reuse, or image-to-image style transfer.
+
+For structural ambiguity in Circos-style figures or density-driven UMAP
+appearance, also read
+[references/reference-figure-recipes.md](references/reference-figure-recipes.md).
 
 ## Maintain the skill
 

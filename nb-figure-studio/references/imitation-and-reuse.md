@@ -83,6 +83,36 @@ Before reusing a template or composition:
 Do not force a different chart family into the reference's shape merely to match
 the picture.
 
+### Resolve structural ambiguity before copying
+
+A familiar plot name can hide incompatible data contracts. In particular:
+
+- A genomic Circos ideogram uses chromosomes as sectors and genomic coordinates
+  as positions.
+- A feature-evidence wheel can use one gene or sample per equal-width sector;
+  radial tracks then represent categorical evidence rather than genomic location.
+
+These figures may look related and even use the same package family, but their
+sector semantics, ordering, and interpretation are different. Identify the unit
+represented by each sector before choosing `RCircos`, `circlize`, or another
+renderer. Do not convert a categorical multi-track wheel into a chromosome plot
+merely because both are circular.
+
+### Treat density as evidence-bearing
+
+Dense UMAP, t-SNE, and scatter clouds depend on the number and distribution of
+observations. Point size and opacity can improve legibility, but raising them
+cannot reconstruct a reference's density from a much smaller demo dataset.
+
+For reference-style UMAP work:
+
+1. compare the reference and candidate at the same display size;
+2. record cell count, visible cluster count, cluster area, and apparent density;
+3. preserve the supplied point coordinates and grouping;
+4. state when a public demo or simulated point cloud is standing in for the
+   original data;
+5. judge code fidelity separately from data-driven fidelity.
+
 ## Workflow
 
 1. Classify each reference image: style reference, structural reference, or source
