@@ -2,4 +2,4 @@ interface:
   display_name: "NB-figure-studio"
   short_description: "Create, audit, revise, and imitate scientific figures"
   brand_color: "#3478A3"
-  default_prompt: "Use $nb-figure-studio to create, audit, revise, or adapt this scientific figure."
+  default_prompt: "Use $nb-figure-studio to generate several style variants of this scientific figure from the same data, then help me choose the final direction."

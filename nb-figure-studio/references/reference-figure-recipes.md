@@ -67,8 +67,6 @@ Use:
 Do not tune thresholds to obtain a preferred gene count. Keep p=0 handling,
 adjusted-P choice, label sets, and output dimensions in the manifest.
 
-## Circular UMAP
-
 ## First identify what each sector means
 
 Before choosing a package, write down the sector/position contract:
@@ -81,6 +79,11 @@ Before choosing a package, write down the sector/position contract:
 
 Never convert a categorical evidence wheel into a chromosome ideogram merely
 because both figures are circular. The interpretation changes completely.
+
+## Structural contract
+
+For circular UMAPs, define the cell-type sectors, within-sector order, metadata
+tracks, and label-placement rules before rendering.
 
 ## Circular UMAP
 

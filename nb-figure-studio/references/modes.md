@@ -62,10 +62,16 @@ repeat the same evidence under a secondary metric.
 1. Inspect the real input schema and image properties before coding.
 2. Preserve raw data and keep transformed analysis outputs distinct.
 3. Resolve the backend and render at final physical size.
-4. Use the shared design system before adding panel-specific styling.
-5. Export an editable master and a preview.
-6. Run source, geometry, text, collision, and final-size visual checks that apply.
-7. Deliver the contract, output paths, and unresolved assumptions.
+4. If the visual direction is open, create 2–4 variants from the same data and
+   assemble a labelled contact sheet. Keep statistic, grouping, thresholds, axes,
+   and label meaning invariant across variants. Read
+   [variant-gallery.md](variant-gallery.md).
+5. Ask the user to choose a variant and record the choice.
+6. Apply the shared design system to the selected direction and produce the final
+   master.
+7. Run source, geometry, text, collision, and final-size visual checks that apply.
+8. Deliver the contract, asset/adaptation provenance, statistical report, output
+   paths, and unresolved assumptions.
 
 Do not create synthetic data to fill a missing input. A labelled demonstration
 may be produced only when the user asks for a template or synthetic example, and
@@ -185,7 +191,9 @@ For “从数据到投稿级图” or repeated refinement:
 
 ```text
 contract
-→ first render
+→ 2–4 variants when style is open
+→ user selection
+→ selected final render
 → evidence audit
 → visual audit
 → fix blockers

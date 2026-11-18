@@ -128,6 +128,27 @@ Improves finish without changing interpretation:
 - Provenance and rights are recorded.
 - Similarity does not create a false claim of exact journal compliance.
 
+### Variant gallery
+
+- Open-ended requests received 2–4 meaningful, visually distinct variants from the
+  same data.
+- Every variant preserves statistical thresholds, grouping, axes, and
+  evidence-bearing labels.
+- The contact sheet labels variants consistently and is viewed at a comparable
+  size.
+- The recommendation states the scientific-reading advantage, not only aesthetic
+  preference.
+- The final vector master is produced only after the user selects or delegates the
+  choice.
+
+### Asset adaptation and reproducibility
+
+- The chart-family semantics and data dimensions matched before column mapping.
+- Every panel records native/data-adapt/parameter-inherit/new-build status.
+- Embedded simulated data and demonstration labels were removed.
+- The report states `n`, transformations, statistics, source data, and output files.
+- Automated checks are reported as screening results, not scientific approval.
+
 ### Revise
 
 - Invariants are listed before edits.

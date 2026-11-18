@@ -8,7 +8,7 @@ description: >-
   export review. Do not use for dashboards, video, or purely statistical analysis
   that does not need a figure.
 metadata:
-  version: "1.1.1"
+  version: "1.2"
 ---
 
 # NB-figure-studio
@@ -35,6 +35,12 @@ final reviewer typically runs `Audit + Revise + Audit`.
 
 Read [references/modes.md](references/modes.md) for each mode's decision rules,
 required inputs, and output contract. Read only the mode sections in use.
+
+For an open-ended request to create a new data figure, treat **style selection**
+as a first-class step. Unless the user has already fixed a visual direction,
+produce 2–4 meaningful variants from the same data and let the user choose before
+the final export. Read
+[references/variant-gallery.md](references/variant-gallery.md).
 
 ## Protect the scientific evidence
 
@@ -86,6 +92,11 @@ when the missing choice changes the scientific output or the drawing backend.
 
 Read [references/capability-map.md](references/capability-map.md) for the current
 skill/script routing table and fallback behavior.
+
+Before adapting an existing script, template, or reference figure, read
+[references/asset-routing-and-reproducibility.md](references/asset-routing-and-reproducibility.md).
+It defines the semantic-match gate, adaptation provenance, statistics report, and
+QA boundaries.
 
 For plotting code, resolve Python or R from the request, input workflow, this
 task, or the saved default. If still unresolved, ask once: **Python or R? I will
@@ -166,10 +177,14 @@ persist a reusable lesson.
 
 Return the files appropriate to the medium:
 
+- labelled 2–4 variant previews when the style was open and the user has not yet
+  selected a direction;
 - editable source or code;
 - vector master when the figure is not inherently raster;
 - final-size PNG/PDF preview;
 - clean source data or a pointer to it;
+- asset/adaptation provenance and a statistics/reproducibility report for
+  quantitative figures;
 - concise QA report with unresolved issues;
 - before/after change log for revisions;
 - style-transfer map and provenance note for imitation.

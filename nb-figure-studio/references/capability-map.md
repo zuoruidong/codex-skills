@@ -19,6 +19,8 @@ trail.
 | Read paper figures panel by panel | `scientific-figure-reader` | Evidence labels, figure-family checks, interpretation |
 | Differential-expression volcano | Internal [reference-figure-recipes.md](reference-figure-recipes.md#volcano-plot) | Validate the DE table contract, thresholds, labels, and display cap |
 | Circular/L-axis/hull UMAP, multi-track evidence wheel | Internal [reference-figure-recipes.md](reference-figure-recipes.md#figure-family-router) | Choose the structural recipe before coding |
+| Open-ended figure style selection | Internal [variant-gallery.md](variant-gallery.md) | Render 2–4 data-invariant variants and let the user choose |
+| Script/template/adaptation provenance, statistical report, QA boundaries | Internal [asset-routing-and-reproducibility.md](asset-routing-and-reproducibility.md) | Record semantic matching, adaptation level, reproducibility, and checks |
 | DE diagnostic plots | `de-visualization` | MA, volcano, PCA, distance heatmap, dispersion |
 | Enrichment plots | `enrichment-visualization` | GO/KEGG/GSEA redundancy and plot choice |
 | AI raster image generation/editing | `imagegen` | Illustrations, graphical abstracts, targeted raster edits |
