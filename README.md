@@ -1,19 +1,20 @@
-# Codex Skills
+# Paper Figure Skills
 
-Public collection of reusable Codex skill packages.
+A public collection of reusable paper-figure skills, plotting recipes, review
+rules, and revision workflows for Codex.
 
 ## 关于这个项目
 
 这个公开库由 [@zuoruidong](https://github.com/zuoruidong) 维护。作者会持续把平时看到的高质量科研图、好用的绘图代码、审图经验和翻修技巧整理进
 `NB-figure-studio`，让它不只是一个静态模板，而是一套会不断学习和更新的科研绘图 skill。
 
-当前版本：**v1.1**。后续每次加入值得复用的新技巧，都会更新版本、验证技能并同步到这里。
+当前版本：**v1.1.1**。后续每次加入值得复用的新技巧，都会更新版本、验证技能并同步到这里。
 
 ## Included skills
 
 ### `NB-figure-studio`
 
-**Version:** 1.1
+**Version:** 1.1.1
 
 A unified scientific-figure workflow for:
 
@@ -38,14 +39,14 @@ repository so the installed skill and GitHub copy stay in sync.
 Clone the repository:
 
 ```bash
-git clone https://github.com/zuoruidong/codex-skills.git
+git clone https://github.com/zuoruidong/paper-figure-skills.git
 ```
 
 Copy or move the skill into your Codex skills directory:
 
 ```bash
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-cp -R codex-skills/nb-figure-studio \
+cp -R paper-figure-skills/nb-figure-studio \
   "${CODEX_HOME:-$HOME/.codex}/skills/"
 ```
 

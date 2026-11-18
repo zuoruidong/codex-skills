@@ -8,7 +8,7 @@ description: >-
   export review. Do not use for dashboards, video, or purely statistical analysis
   that does not need a figure.
 metadata:
-  version: "1.1"
+  version: "1.1.1"
 ---
 
 # NB-figure-studio
@@ -153,8 +153,8 @@ technique, strong reference, correction, or review lesson and asks to learn it:
    such as `1.0.1` for a correction, and `2.0` only for an incompatible
    restructuring.
 6. Sync the workspace package, installed Codex skill, and public repository:
-   <https://github.com/zuoruidong/codex-skills>. Commit, push, and verify that the
-   remote `nb-figure-studio/` tree contains the change.
+   <https://github.com/zuoruidong/paper-figure-skills>. Commit, push, and verify
+   that the remote `nb-figure-studio/` tree contains the change.
 7. Report the new version, what was learned, and the GitHub commit. Never upload
    private source data, credentials, personal paths, or protected reference assets.
 
